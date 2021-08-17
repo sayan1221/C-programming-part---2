@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+char a[100],ch;
+FILE *fp;
+printf("Enter file name :");
+scanf("%s",&a);
+fp=fopen(a,"r");
+while(1){
+ch=fgetc(fp);
+printf("%s",ch);
+if(ch==EOF)
+break;
+}
+return 0;
+}
+    
